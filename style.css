@@ -1,0 +1,169 @@
+
+
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: Epilogue,sans-serif;
+ 
+}
+
+.title{
+    
+    font-size: 35px;
+    font-weight: bold;
+    
+}
+
+.myImage{
+    width: 450px;
+    height: 570px;
+}
+ul li a{
+   color: rgba(84, 84, 82, 0.811);
+   text-decoration: none;
+   letter-spacing: 0.8px;
+   font-size: 15px;
+}
+ul li a:hover{
+    color: rgb(32, 32, 32);
+    transition: 0.5s;
+    
+}
+
+ul li{
+    list-style-type: none;
+}
+
+.lableForCheckBox{
+    color: rgba(84, 84, 82, 0.811);
+    text-decoration: none;
+    letter-spacing: 0.8px;
+    font-size: 15px;
+    
+}
+.lableForCheckBox:hover{
+    color: rgb(32, 32, 32);
+    transition: 0.5s;
+    cursor: pointer;
+    
+    
+}
+.chevronDownBtn{
+    background-color: white;
+    border: 2px solid white;
+    color:rgba(84, 84, 82, 0.811) ;
+    font-size: 12px;
+
+}
+#checkbox{
+    visibility: hidden;
+    display: none;
+}
+
+.check{
+    background-color:rgba(183, 168, 187, 0.811) ;
+    width: 50px;
+    height: 25px;
+    position: relative;
+    border-radius: 20px;
+    transition: ease-in 0.5s;
+}
+
+.check::before{
+  content: '';
+  position: absolute;
+  background-color: #fff;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  top: 2px;
+  left: 2px;
+  transition: 0.5s;
+
+}
+.registerBtn{
+    width: 100px;
+    height: 40px;
+    background-color: #fff;
+    color: rgba(84, 84, 82, 0.811);
+    border-radius: 12px;
+    border: 1px solid black;
+    font-size: 14px;
+    letter-spacing: 0.8px;
+}
+.registerBtn:hover{
+  color: #fff;
+  background-color: black;
+  transition: 0.5s;
+}
+
+h1{
+  font-size: 90px;
+}
+
+h1+p{
+  font-size: 20px;
+  color: rgba(84, 84, 82, 0.811);
+  letter-spacing: 0.8px;
+}
+.moreBtn{
+  width: 165px;
+  height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 14px;
+}
+.moreBtn:hover{
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+}
+
+.todoIcon{
+    color: rgba(78, 26, 210, 0.815);
+    font-size: 1.2rem;
+}
+.calendarIcon{
+    color: rgba(43, 177, 226, 0.806);
+}
+.remIcon{
+    color: rgba(221, 211, 12, 0.904);
+}
+.planIcon{
+    color: rgba(129, 9, 228, 0.838);
+}
+.featureList{
+    position: absolute;
+    left: -40px;
+    top: 60px;
+    width: 10rem;
+    border-radius: 5px;
+    background-color: #fff;
+    /* opacity: 0.9; */
+    opacity: 0;
+    box-shadow: 0.5px 0.5px 0.25rem rgba(126, 123, 123, 0.788),
+                -0.5px 0 0.25rem rgba(126, 123, 123, 0.735);
+    transition: 0.2s ease-in;
+}
+
+.companyList{
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 7.6rem;
+    height: 7rem;
+    border-radius: 5px;
+    background-color: #fff;
+    opacity: 0;
+    /* opacity: 0.9; */
+    box-shadow: 0.5px 0.5px 0.25rem rgba(126, 123, 123, 0.788),
+    -0.5px 0 0.25rem rgba(126, 123, 123, 0.735);
+    transition: 0.2s ease-in;
+}
+
+.pointer:hover{
+    cursor: pointer;
+}
