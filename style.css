@@ -1,4 +1,6 @@
-
+:root{
+    --theme-color:  
+}
 
 body,html{
     height: 100%;
@@ -66,7 +68,7 @@ ul li{
     height: 25px;
     position: relative;
     border-radius: 20px;
-    transition: ease-in 0.5s;
+    transition: ease-in 0.2s;
 }
 
 .check::before{
@@ -80,7 +82,24 @@ ul li{
   left: 2px;
   transition: 0.5s;
 
+  
 }
+ 
+#checkbox:checked ~ .check::before{
+    transform: translateX(26px);
+}
+
+#checkbox:checked ~ .check{
+    background-color: rgba(78, 26, 210, 0.815);
+}
+
+/* */
+
+#checkbox:checked ~ .check::after{
+
+    transform: translateX(26px);
+}
+
 .registerBtn{
     width: 100px;
     height: 40px;
@@ -145,7 +164,7 @@ h1+p{
     /* opacity: 0.9; */
     opacity: 0;
     box-shadow: 0.5px 0.5px 0.25rem rgba(126, 123, 123, 0.788),
-                -0.5px 0 0.25rem rgba(126, 123, 123, 0.735);
+    -0.5px 0 0.25rem rgba(126, 123, 123, 0.735);
     transition: 0.2s ease-in;
 }
 
@@ -163,7 +182,79 @@ h1+p{
     -0.5px 0 0.25rem rgba(126, 123, 123, 0.735);
     transition: 0.2s ease-in;
 }
-
+.pointer{
+  color: rgba(84, 84, 82, 0.811);  
+}
 .pointer:hover{
     cursor: pointer;
+    color: rgb(33, 32, 32);
+}
+
+.addClassForBody{
+    background-color: #192a56;
+    color: #fff;
+}
+.addClassForBody p{
+    color: #fff;
+}
+
+.addClassForBody button{
+    background-color: #fff;
+    border-color:#192a56;
+    color: #192a56;
+}
+.addClassForBody button:hover{
+    background-color:#192a56 ;
+    border-color: #fff;
+    color: #fff;
+}
+
+.addClassForBody li i{
+    color: #fff;
+}
+.addClassForBody li a{
+    color: #fff;
+}
+.addClassForBody li i:hover{
+    color: rgba(189, 181, 181, 0.788);
+}
+.addClassForBody li a:hover{
+    color: rgba(189, 181, 181, 0.788);
+}
+.addClassForBody li .myIconButton{
+    background-color:#192a56;
+    border-color: #192a56;
+}
+
+.addClassForBody .featureList{
+    background-color: #192a56;
+}
+.addClassForBody .companyList{ 
+    background-color: #192a56;
+}
+.addClassForBody .featureList li i.pointer{
+    color: #fff;
+}
+.addClassForBody .companyList li i.pointer{
+    color: #fff;
+}
+.addClassForBody .featureList li i.pointer:hover{
+    color: rgba(189, 181, 181, 0.788);
+}
+.addClassForBody .companyList li i.pointer:hover{
+    color: rgba(189, 181, 181, 0.788);
+}
+
+.addClassForBody .todoIcon{
+    color: rgba(78, 26, 210, 0.815);
+    font-size: 1.2rem;
+}
+.addClassForBody .calendarIcon{
+    color: rgba(43, 177, 226, 0.806);
+}
+.addClassForBody .remIcon{
+    color: rgba(221, 211, 12, 0.904);
+}
+.addClassForBody .planIcon{
+    color: rgba(129, 9, 228, 0.838);
 }
