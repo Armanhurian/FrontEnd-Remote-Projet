@@ -8,7 +8,31 @@ let featureList = document.querySelector('.featureList')
 let companyList = document.querySelector('.companyList')
 let lableForCheckBox = document.querySelector('#checkbox')
 let check = document.querySelector('.check')
+let burger = document.querySelector('.burger')
+let navigation = document.querySelector('.navigation')
+let navigator = document.querySelector('.navigator')
 
+// if(window.innerWidth > '1200'){
+//     console.log('true'); 
+//     navigation.style.opacity = '1'
+//     navigator.style.opacity = '1'
+// }
+
+
+burger.addEventListener('click',function(event){
+
+    if(burger.className === 'burger'){
+        
+        burger.classList.add('active')
+        navigation.style.opacity = '1'
+        navigator.style.opacity = '1'
+    }else if(burger.className === 'burger active'){
+        burger.classList.remove('active')
+        navigation.style.opacity = '0'
+        navigator.style.opacity = '0'
+        
+    }
+})
 
 firstChevronDownBtn.addEventListener('click',function(){
 
@@ -42,13 +66,15 @@ secondChevronDownBtn.addEventListener('click',function(){
 })
 
 lableForCheckBox.addEventListener('click',function(){
+    
     if(document.body.className !== 'addClassForBody'){
         document.body.classList.add('addClassForBody')
-        
+    
     }else{
         document.body.classList.remove('addClassForBody')
-
-    }
+    
+    
+    }  
 })
 
 firstChevronDownBtnQuestion.addEventListener('click',function(){
